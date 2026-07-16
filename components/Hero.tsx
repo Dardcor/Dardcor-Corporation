@@ -109,9 +109,11 @@ export default function Hero() {
               <DardcorLogo
                 size={320}
                 variant="white"
-                animated={false}
+                animated={true}
                 style={{
-                  filter: 'drop-shadow(0 0 60px rgba(255,255,255,0.15)) drop-shadow(0 0 120px rgba(139,92,246,0.1))',
+                  filter: 'drop-shadow(0 0 60px rgba(255,255,255,0.4)) drop-shadow(0 0 120px rgba(139,92,246,0.3)) drop-shadow(0 0 200px rgba(139,92,246,0.2))',
+                  mixBlendMode: 'screen',
+                  opacity: 0.85
                 }}
                 className="w-[200px] h-[200px] md:w-[320px] md:h-[320px]"
               />

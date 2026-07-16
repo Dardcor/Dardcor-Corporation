@@ -19,24 +19,22 @@ export default function DardcorLogo({
 }: DardcorLogoProps) {
   let gradientId = `logo-gradient-${variant}`
 
-  // Gradient configurations matching the concept image
   let gradientStopStart = '#FFFFFF'
   let gradientStopEnd = '#A3A3A3'
 
   if (variant === 'blue') {
-    gradientStopStart = '#60A5FA' // Blue-400
-    gradientStopEnd = '#1D4ED8'   // Blue-700
+    gradientStopStart = '#60A5FA'
+    gradientStopEnd = '#1D4ED8'
   } else if (variant === 'purple') {
-    gradientStopStart = '#C084FC' // Purple-400
-    gradientStopEnd = '#6D28D9'   // Purple-700
+    gradientStopStart = '#C084FC'
+    gradientStopEnd = '#6D28D9'
   } else if (variant === 'green') {
-    gradientStopStart = '#34D399' // Green-400
-    gradientStopEnd = '#047857'   // Green-700
+    gradientStopStart = '#34D399'
+    gradientStopEnd = '#047857'
   } else if (variant === 'white') {
     gradientStopStart = '#FFFFFF'
     gradientStopEnd = '#E5E5E5'
   } else {
-    // Default silver/white premium gradient
     gradientStopStart = '#FFFFFF'
     gradientStopEnd = '#D4D4D4'
   }

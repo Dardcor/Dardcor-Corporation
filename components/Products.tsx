@@ -215,20 +215,16 @@ export default function Home() {
           
           {/* Left Column: Product Info */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <DardcorLogo size={64} variant="purple" animated={true} />
-              <div className="flex flex-col">
-                <span className="font-mono text-xs font-bold text-purple-400 uppercase tracking-widest">PRODUCT 01 // SUITE</span>
-                <span className="font-mono text-[9px] text-gray-500 tracking-[0.25em] font-extrabold uppercase">COGNITIVE MODULE</span>
+              <div className="flex flex-col gap-0.5">
+                <div className="flex items-center gap-2.5">
+                  <span className="font-display text-3xl sm:text-4xl font-black text-white tracking-tight">DARDCOR</span>
+                  <span className="font-display text-3xl sm:text-4xl font-black text-purple-400 tracking-tight">AI</span>
+                </div>
+                <span className="font-mono text-[10px] font-bold text-gray-500 tracking-[0.25em] uppercase">ARTIFICIAL INTELLIGENCE</span>
               </div>
             </div>
-
-            {/* Giant Header */}
-            <h2 className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-white leading-none tracking-tight">
-              DARDCOR <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-300">AI</span>
-            </h2>
-            <p className="text-sm font-mono font-bold text-gray-500 tracking-[0.25em] uppercase">ARTIFICIAL INTELLIGENCE</p>
             
             <p className="text-base text-gray-400 leading-relaxed max-w-lg">
               Sistem obrolan AI multi-modal dengan kemampuan analisis file mendalam, pencarian web real-time, dan generator gambar terintegrasi. Dirancang untuk mempercepat pemahaman basis kode yang kompleks.
@@ -357,20 +353,16 @@ export default function Home() {
 
           {/* Right Column: Product Info */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <DardcorLogo size={64} variant="purple" animated={true} />
-              <div className="flex flex-col">
-                <span className="font-mono text-xs font-bold text-purple-400 uppercase tracking-widest">PRODUCT 02 // SUITE</span>
-                <span className="font-mono text-[9px] text-gray-500 tracking-[0.25em] font-extrabold uppercase">EDITOR INTEGRATION</span>
+              <div className="flex flex-col gap-0.5">
+                <div className="flex items-center gap-2.5">
+                  <span className="font-display text-3xl sm:text-4xl font-black text-white tracking-tight">DARDCOR</span>
+                  <span className="font-display text-3xl sm:text-4xl font-black text-violet-400 tracking-tight">CODE</span>
+                </div>
+                <span className="font-mono text-[10px] font-bold text-gray-500 tracking-[0.25em] uppercase">EDITOR AGENT</span>
               </div>
             </div>
-
-            {/* Giant Header */}
-            <h2 className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-white leading-none tracking-tight">
-              DARDCOR <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-300">CODE</span>
-            </h2>
-            <p className="text-sm font-mono font-bold text-gray-500 tracking-[0.25em] uppercase">EDITOR AGENT</p>
             
             <p className="text-base text-gray-400 leading-relaxed max-w-lg">
               Editor kode berbasis agen otonom. Berinteraksi langsung dengan editor Anda untuk melakukan penulisan berkas baru, modifikasi kode non-kontigu, pengujian unit test secara otomatis, hingga perbaikan bug secara cepat.
@@ -412,20 +404,16 @@ export default function Home() {
           
           {/* Left Column: Product Info */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <DardcorLogo size={64} variant="green" animated={true} />
-              <div className="flex flex-col">
-                <span className="font-mono text-xs font-bold text-emerald-400 uppercase tracking-widest">PRODUCT 03 // SUITE</span>
-                <span className="font-mono text-[9px] text-gray-500 tracking-[0.25em] font-extrabold uppercase">TERMINAL ORCHESTRATION</span>
+              <div className="flex flex-col gap-0.5">
+                <div className="flex items-center gap-2.5">
+                  <span className="font-display text-3xl sm:text-4xl font-black text-white tracking-tight">DARDCOR</span>
+                  <span className="font-display text-3xl sm:text-4xl font-black text-emerald-400 tracking-tight">AGENT</span>
+                </div>
+                <span className="font-mono text-[10px] font-bold text-gray-500 tracking-[0.25em] uppercase">TERMINAL AGENT</span>
               </div>
             </div>
-
-            {/* Giant Header */}
-            <h2 className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-white leading-none tracking-tight">
-              DARDCOR <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">AGENT</span>
-            </h2>
-            <p className="text-sm font-mono font-bold text-gray-500 tracking-[0.25em] uppercase">TERMINAL AGENT</p>
             
             <p className="text-base text-gray-400 leading-relaxed max-w-lg">
               Gerbang (gateway) LLM multi-provider berbasis terminal. Menyediakan lingkungan pengerjaan tugas di latar belakang (background execution), sistem kustomisasi *Skills* berbasis Markdown, serta integrasi ekosistem terpadu.
