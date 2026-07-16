@@ -117,10 +117,15 @@ export default function Home() {
     'dardcor-agent> '
   ])
   const terminalBottomRef = useRef<HTMLDivElement>(null)
+  const isMounted = useRef(false)
 
   useEffect(() => {
+    if (!isMounted.current) {
+      isMounted.current = true
+      return
+    }
     if (terminalBottomRef.current) {
-      terminalBottomRef.current.scrollIntoView({ behavior: 'smooth' })
+      terminalBottomRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
     }
   }, [terminalHistory])
 
@@ -287,7 +292,7 @@ export default function Home() {
         {/* ========================================================
             SECTION 2: DARDCOR CODE (Alternating layout)
             ======================================================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div id="dardcor-code" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Code IDE Simulator (Zig-zag swap) */}
           <div className="lg:col-span-6 order-last lg:order-first">
@@ -496,7 +501,6 @@ export default function Home() {
                   value={terminalInput}
                   onChange={(e) => setTerminalInput(e.target.value)}
                   placeholder='Ketik "help" untuk melihat perintah...'
-                  autoFocus
                 />
                 <button type="submit" className="text-[10px] font-bold text-green-400 hover:text-white px-3 py-1.5 bg-green-500/10 rounded border border-green-500/20 font-mono">
                   ENTER
