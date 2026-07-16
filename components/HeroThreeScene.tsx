@@ -1,4 +1,5 @@
 'use client'
+import '../utils/suppressWarnings'
 
 import React, { useRef, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'

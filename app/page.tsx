@@ -4,8 +4,8 @@ import Hero from '@/components/Hero'
 import Products from '@/components/Products'
 import Features from '@/components/Features'
 import Ecosystem from '@/components/Ecosystem'
-import BrandShowcase from '@/components/BrandShowcase'
 import Footer from '@/components/Footer'
+import BottomNeuralBackground from '@/components/BottomNeuralBackground'
 
 export default function Home() {
   return (
@@ -14,12 +14,17 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Products />
-        <Features />
-        <Ecosystem />
-        <BrandShowcase />
+        {/* Container for the lower sections with Neural Network background */}
+        <div className="relative">
+          <BottomNeuralBackground />
+          <div className="relative z-10">
+            <Products />
+            <Features />
+            <Ecosystem />
+            <Footer />
+          </div>
+        </div>
       </main>
-      <Footer />
     </>
   )
 }
