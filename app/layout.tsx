@@ -21,11 +21,12 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dardcor — AI Ecosystem for Modern Development',
+  title: 'Dardcor Corporation - AI Ecosystem for Modern Development',
   description:
     'Dardcor Ecosystem: AI-powered chat, autonomous coding IDE, and multi-provider AI agent. Deploy agents that plan, code, test, and ship.',
+  keywords: ['AI Ecosystem', 'Autonomous Agent', 'AI Code Editor', 'Dardcor AI', 'Dardcor Code', 'Terminal Agent', 'Artificial Intelligence', 'Software Development'],
   openGraph: {
-    title: 'Dardcor — AI Ecosystem for Modern Development',
+    title: 'Dardcor Corporation - AI Ecosystem for Modern Development',
     description:
       'Three products. One vision. Dardcor AI, Dardcor Code, and Dardcor Agent — built for the AI-native era.',
     type: 'website',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dardcor — AI Ecosystem for Modern Development',
+    title: 'Dardcor Corporation - AI Ecosystem for Modern Development',
     description:
       'Three products. One vision. Dardcor AI, Dardcor Code, and Dardcor Agent — built for the AI-native era.',
   },
@@ -42,6 +43,17 @@ export const metadata: Metadata = {
 
 export const viewport = {
   themeColor: '#04060C',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Dardcor Corporation',
+  url: 'https://dardcor.web.id',
+  description: 'AI Ecosystem for Modern Development including Dardcor AI, Dardcor Code, and Dardcor Agent.',
+  sameAs: [
+    'https://github.com/Dardcor',
+  ]
 }
 
 export default function RootLayout({
@@ -55,6 +67,10 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
       <body className="bg-[var(--color-bg)] text-[var(--color-white)] antialiased min-h-screen overflow-x-hidden">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

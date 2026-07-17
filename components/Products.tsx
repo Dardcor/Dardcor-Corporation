@@ -4,10 +4,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import DardcorLogo from './DardcorLogo'
 export default function Products() {
-  
-  // ==========================================
-  // STATE 1: DARDCOR AI CHAT SIMULATOR
-  // ==========================================
+
   const [chatMessages, setChatMessages] = useState([
     { sender: 'user', text: 'Analyze the current project dependencies and recommend upgrades.' },
     { sender: 'ai', text: 'I have analyzed your package.json file. You are currently running Next.js v16 and React v19. Your dependencies look solid, but I recommend upgrading framer-motion to v12.4.5 to patch a known layout rendering bug.' }
@@ -35,9 +32,6 @@ export default function Products() {
     }, 1500)
   }
 
-  // ==========================================
-  // STATE 2: DARDCOR CODE EDITOR SIMULATOR
-  // ==========================================
   const [editorFile, setEditorFile] = useState('app/page.tsx')
   const [agentProgress, setAgentProgress] = useState(0)
   const [editorCode, setEditorCode] = useState(`import Navbar from '@/components/Navbar'
@@ -52,7 +46,6 @@ export default function Home() {
   )
 }`)
 
-  // Simulated Code Writing Loop
   useEffect(() => {
     const codes = [
       `import Navbar from '@/components/Navbar'
@@ -218,10 +211,10 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <DardcorLogo size={64} variant="purple" animated={true} />
               <div className="flex flex-col gap-0.5">
-                <div className="flex items-center gap-2.5">
+                <h2 className="flex items-center gap-2.5 m-0 p-0">
                   <span className="font-display text-3xl sm:text-4xl font-black text-white tracking-tight">DARDCOR</span>
                   <span className="font-display text-3xl sm:text-4xl font-black text-purple-400 tracking-tight">AI</span>
-                </div>
+                </h2>
                 <span className="font-mono text-[10px] font-bold text-gray-500 tracking-[0.25em] uppercase">ARTIFICIAL INTELLIGENCE</span>
               </div>
             </div>
@@ -356,10 +349,10 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <DardcorLogo size={64} variant="purple" animated={true} />
               <div className="flex flex-col gap-0.5">
-                <div className="flex items-center gap-2.5">
+                <h2 className="flex items-center gap-2.5 m-0 p-0">
                   <span className="font-display text-3xl sm:text-4xl font-black text-white tracking-tight">DARDCOR</span>
                   <span className="font-display text-3xl sm:text-4xl font-black text-violet-400 tracking-tight">CODE</span>
-                </div>
+                </h2>
                 <span className="font-mono text-[10px] font-bold text-gray-500 tracking-[0.25em] uppercase">EDITOR AGENT</span>
               </div>
             </div>
@@ -407,10 +400,10 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <DardcorLogo size={64} variant="green" animated={true} />
               <div className="flex flex-col gap-0.5">
-                <div className="flex items-center gap-2.5">
+                <h2 className="flex items-center gap-2.5 m-0 p-0">
                   <span className="font-display text-3xl sm:text-4xl font-black text-white tracking-tight">DARDCOR</span>
                   <span className="font-display text-3xl sm:text-4xl font-black text-emerald-400 tracking-tight">AGENT</span>
-                </div>
+                </h2>
                 <span className="font-mono text-[10px] font-bold text-gray-500 tracking-[0.25em] uppercase">TERMINAL AGENT</span>
               </div>
             </div>

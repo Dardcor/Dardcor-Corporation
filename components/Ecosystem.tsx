@@ -29,7 +29,7 @@ const nodes = [
 
 export default function Ecosystem() {
   return (
-    <section id="ecosystem" className="relative py-24 bg-[#04060C] border-t border-white/5">
+    <section id="ecosystem" className="relative py-24 bg-transparent border-t border-white/5">
       
       {/* Visual background details */}
       <div className="absolute top-1/2 left-1/4 w-[300px] h-[300px] bg-cyan-500/5 rounded-full blur-[90px] pointer-events-none" />

@@ -121,7 +121,7 @@ export default function Features() {
               <div className="w-9 h-9 text-violet-400 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h4 className="font-display text-base font-semibold mb-2">{feature.title}</h4>
+              <h3 className="font-display text-base font-semibold mb-2">{feature.title}</h3>
               <p className="text-sm text-[var(--color-gray)] leading-relaxed">{feature.desc}</p>
             </motion.div>
           ))}

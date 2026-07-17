@@ -37,7 +37,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
             >
-              <motionHtml.div variants={itemVariants} className="flex flex-col font-display leading-[1.08] mb-6">
+              <motionHtml.h1 variants={itemVariants} className="flex flex-col font-display leading-[1.08] mb-6">
                 <span className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white">
                   Intelligence.
                 </span>
@@ -47,7 +47,7 @@ export default function Hero() {
                 <span className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white">
                   Automation.
                 </span>
-              </motionHtml.div>
+              </motionHtml.h1>
 
               <motionHtml.p 
                 variants={itemVariants} 
@@ -106,16 +106,18 @@ export default function Hero() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.6, ease: [0.25, 0.1, 0.25, 1] }}
             >
+              {/* Hardware-accelerated background glow to prevent lag */}
+              <div className="absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-purple-500/20 blur-[100px] rounded-full animate-pulse pointer-events-none" />
+              
               <DardcorLogo
                 size={320}
                 variant="white"
                 animated={true}
                 style={{
-                  filter: 'drop-shadow(0 0 60px rgba(255,255,255,0.4)) drop-shadow(0 0 120px rgba(139,92,246,0.3)) drop-shadow(0 0 200px rgba(139,92,246,0.2))',
                   mixBlendMode: 'screen',
                   opacity: 0.85
                 }}
-                className="w-[200px] h-[200px] md:w-[320px] md:h-[320px]"
+                className="w-[200px] h-[200px] md:w-[320px] md:h-[320px] relative z-10"
               />
             </motionHtml.div>
 

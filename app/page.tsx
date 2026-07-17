@@ -1,11 +1,16 @@
-import ThreeBackground from '@/components/ThreeBackground'
+'use client'
+
+import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import Products from '@/components/Products'
-import Features from '@/components/Features'
-import Ecosystem from '@/components/Ecosystem'
-import Footer from '@/components/Footer'
-import BottomNeuralBackground from '@/components/BottomNeuralBackground'
+
+// Dynamically import heavy and below-the-fold components to prevent initial lag
+const ThreeBackground = dynamic(() => import('@/components/ThreeBackground'), { ssr: false })
+const BottomNeuralBackground = dynamic(() => import('@/components/BottomNeuralBackground'), { ssr: false })
+const Products = dynamic(() => import('@/components/Products'), { ssr: true })
+const Features = dynamic(() => import('@/components/Features'), { ssr: true })
+const Ecosystem = dynamic(() => import('@/components/Ecosystem'), { ssr: true })
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: true })
 
 export default function Home() {
   return (
